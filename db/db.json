@@ -1,0 +1,229 @@
+{
+  "models": [
+    {
+      "id": 1,
+      "name": "Image Classification Model",
+      "category": "Computer Vision",
+      "description": "A model that classifies images into different categories.",
+      "codeSnippet": "const model = new ImageClassificationModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=1",
+      "useCases": ["Object Recognition", "Medical Imaging", "Autonomous Vehicles"]
+    },
+    {
+      "id": 2,
+      "name": "Sentiment Analysis Model",
+      "category": "Natural Language Processing",
+      "description": "A model that analyzes text to determine sentiment.",
+      "codeSnippet": "const model = new SentimentAnalysisModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=2",
+      "useCases": ["Social Media Monitoring", "Customer Feedback Analysis", "Market Research"]
+    },
+    {
+      "id": 3,
+      "name": "Speech Recognition Model",
+      "category": "Speech Recognition",
+      "description": "A model that converts spoken language into text.",
+      "codeSnippet": "const model = new SpeechRecognitionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=3",
+      "useCases": ["Virtual Assistants", "Transcription Services", "Voice-controlled Applications"]
+    },
+    {
+      "id": 4,
+      "name": "Recommendation System Model",
+      "category": "Machine Learning",
+      "description": "A model that provides personalized recommendations to users.",
+      "codeSnippet": "const model = new RecommendationSystemModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=4",
+      "useCases": ["E-commerce Recommendations", "Movie/TV Show Recommendations", "Music Recommendations"]
+    },
+    {
+      "id": 5,
+      "name": "Object Detection Model",
+      "category": "Computer Vision",
+      "description": "A model that detects and classifies objects within images or videos.",
+      "codeSnippet": "const model = new ObjectDetectionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=5",
+      "useCases": ["Security Surveillance", "Retail Analytics", "Autonomous Vehicles"]
+    },
+    {
+      "id": 6,
+      "name": "Language Translation Model",
+      "category": "Natural Language Processing",
+      "description": "A model that translates text from one language to another.",
+      "codeSnippet": "const model = new LanguageTranslationModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=6",
+      "useCases": ["Global Communication", "Language Learning", "Travel Assistance"]
+    },
+    {
+      "id": 7,
+      "name": "Fraud Detection Model",
+      "category": "Machine Learning",
+      "description": "A model that detects fraudulent activities in financial transactions.",
+      "codeSnippet": "const model = new FraudDetectionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=7",
+      "useCases": ["Credit Card Fraud Detection", "Insurance Fraud Detection", "Identity Theft Detection"]
+    },
+    {
+      "id": 8,
+      "name": "Emotion Recognition Model",
+      "category": "Affective Computing",
+      "description": "A model that recognizes human emotions from facial expressions.",
+      "codeSnippet": "const model = new EmotionRecognitionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=8",
+      "useCases": ["Market Research", "Healthcare", "Human-Computer Interaction"]
+    },
+    {
+      "id": 9,
+      "name": "Speech Synthesis Model",
+      "category": "Speech Synthesis",
+      "description": "A model that generates human-like speech from text.",
+      "codeSnippet": "const model = new SpeechSynthesisModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=9",
+      "useCases": ["Text-to-Speech Services", "Accessibility Tools", "Entertainment Industry"]
+    },
+    {
+      "id": 10,
+      "name": "Chatbot Model",
+      "category": "Natural Language Processing",
+      "description": "A model that simulates conversation with users, typically over the internet.",
+      "codeSnippet": "const model = new ChatbotModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=10",
+      "useCases": ["Customer Service", "Information Retrieval", "Entertainment"]
+    },
+    {
+      "id": 11,
+      "name": "Medical Diagnosis Model",
+      "category": "Healthcare",
+      "description": "A model that assists healthcare professionals in diagnosing diseases.",
+      "codeSnippet": "const model = new MedicalDiagnosisModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=11",
+      "useCases": ["Disease Identification", "Medical Imaging Analysis", "Patient Risk Assessment"]
+    },
+    {
+      "id": 12,
+      "name": "Document Classification Model",
+      "category": "Natural Language Processing",
+      "description": "A model that categorizes documents into predefined classes.",
+      "codeSnippet": "const model = new DocumentClassificationModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=12",
+      "useCases": ["Content Management", "Legal Document Processing", "News Classification"]
+    },
+    {
+      "id": 13,
+      "name": "Predictive Maintenance Model",
+      "category": "Machine Learning",
+      "description": "A model that predicts when equipment maintenance is required.",
+      "codeSnippet": "const model = new PredictiveMaintenanceModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=13",
+      "useCases": ["Manufacturing", "Aerospace", "Transportation"]
+    },
+    {
+      "id": 14,
+      "name": "Video Analysis Model",
+      "category": "Computer Vision",
+      "description": "A model that analyzes video content to extract information.",
+      "codeSnippet": "const model = new VideoAnalysisModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=14",
+      "useCases": ["Video Surveillance", "Content Moderation", "Video Summarization"]
+    },
+    {
+      "id": 15,
+      "name": "Stock Price Prediction Model",
+      "category": "Machine Learning",
+      "description": "A model that predicts stock prices based on historical data.",
+      "codeSnippet": "const model = new StockPricePredictionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=15",
+      "useCases": ["Financial Trading", "Investment Analysis", "Risk Management"]
+    },
+    {
+      "id": 16,
+      "name": "Autonomous Driving Model",
+      "category": "Machine Learning",
+      "description": "A model that enables vehicles to operate without human intervention.",
+      "codeSnippet": "const model = new AutonomousDrivingModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=16",
+      "useCases": ["Self-driving Cars", "Delivery Robots", "Unmanned Aerial Vehicles"]
+    },
+    {
+      "id": 17,
+      "name": "Personality Prediction Model",
+      "category": "Natural Language Processing",
+      "description": "A model that predicts a person's personality based on text analysis.",
+      "codeSnippet": "const model = new PersonalityPredictionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=17",
+      "useCases": ["Psychological Assessment", "Personalized Recommendations", "Social Media Analysis"]
+    },
+    {
+      "id": 18,
+      "name": "Weather Forecasting Model",
+      "category": "Machine Learning",
+      "description": "A model that predicts future weather conditions based on historical data.",
+      "codeSnippet": "const model = new WeatherForecastingModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=18",
+      "useCases": ["Climate Research", "Agriculture", "Disaster Management"]
+    },
+    {
+      "id": 19,
+      "name": "Gesture Recognition Model",
+      "category": "Computer Vision",
+      "description": "A model that interprets human gestures to control devices or applications.",
+      "codeSnippet": "const model = new GestureRecognitionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=19",
+      "useCases": ["Smart TVs", "Gaming", "Virtual Reality"]
+    },
+    {
+      "id": 20,
+      "name": "Facial Recognition Model",
+      "category": "Computer Vision",
+      "description": "A model that identifies or verifies individuals from digital images or videos.",
+      "codeSnippet": "const model = new FacialRecognitionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=20",
+      "useCases": ["Security Systems", "Access Control", "Personalized Marketing"]
+    },
+    {
+      "id": 21,
+      "name": "Music Recommendation Model",
+      "category": "Machine Learning",
+      "description": "A model that recommends music tracks based on user preferences.",
+      "codeSnippet": "const model = new MusicRecommendationModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=21",
+      "useCases": ["Music Streaming Platforms", "Personalized Playlists", "Music Discovery"]
+    },
+    {
+      "id": 22,
+      "name": "Health Monitoring Model",
+      "category": "Healthcare",
+      "description": "A model that monitors and analyzes health data to provide insights.",
+      "codeSnippet": "const model = new HealthMonitoringModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=22",
+      "useCases": ["Remote Patient Monitoring", "Fitness Tracking", "Health Risk Assessment"]
+    },
+    {
+      "id": 23,
+      "name": "Virtual Try-On Model",
+      "category": "Computer Vision",
+      "description": "A model that allows users to try on virtual clothing or accessories.",
+      "codeSnippet": "const model = new VirtualTryOnModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=23",
+      "useCases": ["E-commerce", "Fashion Industry", "Augmented Reality"]
+    },
+    {
+      "id": 24,
+      "name": "Traffic Prediction Model",
+      "category": "Machine Learning",
+      "description": "A model that predicts traffic conditions to optimize travel routes.",
+      "codeSnippet": "const model = new TrafficPredictionModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=24",
+      "useCases": ["Navigation Systems", "Smart Cities", "Logistics"]
+    },
+    {
+      "id": 25,
+      "name": "Energy Consumption Forecasting Model",
+      "category": "Machine Learning",
+      "description": "A model that forecasts energy consumption for efficient resource planning.",
+      "codeSnippet": "const model = new EnergyConsumptionForecastingModel();",
+      "imageUrl": "https://picsum.photos/300/300?random=25",
+      "useCases": ["Energy Management", "Smart Grids", "Renewable Energy Integration"]
+    }
+  ]
+}
