@@ -4,11 +4,15 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import copy from "copy-to-clipboard";
 import DisqusComments from "../components/DisqusComments";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import db from "../firebase";
+import { doc, increment, getDoc, setDoc } from "firebase/firestore";
 
 const ModelDetails = () => {
   const location = useLocation();
   const item: any = location.state;
+
+  const [views, setViews] = useState(0);
 
   const [savedItems, setSavedItems] = useState(
     JSON.parse(localStorage?.getItem("savedItems") as string) || []
@@ -32,9 +36,37 @@ const ModelDetails = () => {
     (savedItem: any) => savedItem.name === item.name
   );
 
+  async function addView() {
+    try {
+      const viewRef = doc(db, "views", item.id.toString());
+      const viewSnapshot = await getDoc(viewRef);
+      const currentViews = viewSnapshot.exists() ? viewSnapshot.data().view : 0;
+      const newView = {
+        view: increment(currentViews + 1),
+        name: item.name,
+        category: item.category,
+        description: item.description,
+        codeSnippet: item.codeSnippet,
+        imageUrl: item.imageUrl,
+        useCases: item.useCases,
+      };
+      await setDoc(viewRef, newView, { merge: true });
+      setViews(currentViews + 1);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    addView();
+  }, []);
+
   return (
     <div className="bg-[#BBD0FF] min-h-screen pb-8">
       <Header />
+      <div className="p-4 bg-black absolute right-12 mt-5 text-white rounded-lg">
+        👁 {views}
+      </div>
       <div className="pt-8 flex flex-col items-center gap-y-8 px-8">
         <p className="text-4xl font-bold">{item?.name}</p>
         <img src={item?.imageUrl} width={"40%"} />
