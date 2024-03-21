@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className="bg-[#BBD0FF] min-h-screen pb-8">
       <Header />
-      <div className="pt-44 flex justify-center flex-wrap">
+      <div className="pt-8 flex justify-center flex-wrap">
         <Filters
           filters={["All", ...categories]}
           selectedFilter={selectedFilter}
@@ -44,9 +44,15 @@ const Home = () => {
         />
       </div>
       <div className="flex flex-wrap gap-8 justify-center pt-8">
-        {filteredModels?.map((item: any) => (
-          <ModelCard item={item} key={item.id} />
-        ))}
+        {filteredModels?.length > 0 ? (
+          filteredModels?.map((item: any) => (
+            <ModelCard item={item} key={item.id} />
+          ))
+        ) : (
+          <p className="bg-[#B8C0FF] py-8 px-4 text-2xl">
+            Sorry! No AI models to show :/
+          </p>
+        )}
       </div>
     </div>
   );

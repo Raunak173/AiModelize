@@ -35,7 +35,7 @@ const ModelDetails = () => {
   return (
     <div className="bg-[#BBD0FF] min-h-screen pb-8">
       <Header />
-      <div className="pt-44 flex flex-col items-center gap-y-8 px-8">
+      <div className="pt-8 flex flex-col items-center gap-y-8 px-8">
         <p className="text-4xl font-bold">{item?.name}</p>
         <img src={item?.imageUrl} width={"40%"} />
       </div>
@@ -77,7 +77,7 @@ const ModelDetails = () => {
           <p className="font-bold text-3xl">Some Use Cases :</p>
           <div className="bg-[#B8C0FF] py-8 px-4 mt-2">
             {item?.useCases?.map((usecase: any) => (
-              <p>• Used in {usecase}</p>
+              <p key={usecase}>• Used in {usecase}</p>
             ))}
           </div>
         </div>

@@ -5,7 +5,7 @@
       "name": "Image Classification Model",
       "category": "Computer Vision",
       "description": "The Image Classification Model is a deep learning model trained to categorize images into distinct classes or labels. It utilizes convolutional neural networks (CNNs) to extract features from images and make predictions. This model is widely used in various applications such as object recognition, medical imaging analysis, and autonomous vehicles. It can distinguish between different objects, animals, or scenes in images, providing valuable insights and enabling automation in visual tasks.",
-      "codeSnippet": "const imageClassifier = new ImageClassificationModel(); \nconst image = loadImage('path/to/image.jpg'); \nconst result = imageClassifier.classify(image);",
+      "codeSnippet": "const imageClassifier = new ImageClassificationModel();\nconst image = loadImage('path/to/image.jpg');\nconst result = imageClassifier.classify(image);",
       "imageUrl": "https://picsum.photos/300/300?random=1",
       "useCases": ["Object Recognition", "Medical Imaging", "Autonomous Vehicles"]
     },
