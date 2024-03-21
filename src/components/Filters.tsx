@@ -4,8 +4,10 @@ const Filters = ({ filters, selectedFilter, onSelectFilter }: any) => {
       {filters.map((filter: any) => (
         <button
           key={filter}
-          className={`bg-gray-200 py-2 px-3 rounded-full cursor-pointer z-10 ${
-            filter === selectedFilter ? "bg-red-700 text-white" : ""
+          className={`bg-gray-200 py-2 px-3 rounded-sm cursor-pointer z-10 shadow-md  ${
+            filter === selectedFilter
+              ? "bg-[#E7C6FF] text-blue-700 font-semibold"
+              : ""
           }`}
           onClick={(e) => onSelectFilter(filter, e)}
         >
