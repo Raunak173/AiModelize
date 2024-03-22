@@ -48,14 +48,14 @@ npm run dev
 ```
 ## Website Statistics
 
-![Screenshot 1]()
+![Screenshot 1](/src/assets/s1.png)
 
 **To reduce load time, I have considered the following strategies**:
 
 1. Reduce the number of files the browser needs to download by combining CSS and JavaScript files, using inline styles/scripts, and reducing the use of external resources.
 2. Use browser caching to store static resources (like images, CSS, and JavaScript) locally, so they don't need to be downloaded again on subsequent visits, improving loading times for returning visitors.
 
-![Screenshot 2]()
+![Screenshot 2](/src/assets/s1.png)
 
 ## Contributing
 
