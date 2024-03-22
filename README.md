@@ -28,6 +28,35 @@ AIModelize is a comprehensive catalogue for AI models, designed to provide users
 
 To get started with AIModelize, simply clone the repository and follow the installation instructions in the README.md file. Once you have the application up and running, you can start exploring the world of AI models and even create your own.
 
+## Installation Steps
+
+1. Clone the repository
+```sh
+git clone https://github.com/Raunak173/AiModelize.git
+```
+2. Naviagte to the project directory
+```sh
+cd AiModelize
+```
+3. Install dependencies
+```sh
+npm install
+```
+5. Run the dev server
+```sh
+npm run dev
+```
+## Website Statistics
+
+![Screenshot 1]()
+
+**To reduce load time, I have considered the following strategies**:
+
+1. Reduce the number of files the browser needs to download by combining CSS and JavaScript files, using inline styles/scripts, and reducing the use of external resources.
+2. Use browser caching to store static resources (like images, CSS, and JavaScript) locally, so they don't need to be downloaded again on subsequent visits, improving loading times for returning visitors.
+
+![Screenshot 2]()
+
 ## Contributing
 
 We welcome contributions from the community to help improve AIModelize. If you have ideas for new features, improvements to existing features, or bug fixes, please submit a pull request. Together, we can make AIModelize the go-to platform for AI enthusiasts and professionals alike.
