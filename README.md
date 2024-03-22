@@ -48,6 +48,8 @@ npm run dev
 ```
 ## Website Statistics
 
+**Source**: [Pingdom](https://tools.pingdom.com/)
+
 ![Screenshot 1](/src/assets/s1.png)
 
 **To reduce load time, I have considered the following strategies**:
