@@ -55,7 +55,25 @@ npm run dev
 1. Reduce the number of files the browser needs to download by combining CSS and JavaScript files, using inline styles/scripts, and reducing the use of external resources.
 2. Use browser caching to store static resources (like images, CSS, and JavaScript) locally, so they don't need to be downloaded again on subsequent visits, improving loading times for returning visitors.
 
-![Screenshot 2](/src/assets/s1.png)
+![Screenshot 2](/src/assets/s2.png)
+
+## Project Overview
+
+1. **Objective**: AIModelize is a web application designed to serve as a comprehensive catalog for AI models, providing users with a platform to explore, create, and save AI models.
+2. **Homepage**: The homepage displays 25 default AI models and includes a navigation bar with tabs for Home, Mine, and Featured.
+3. **Navigation**: The navigation bar allows users to switch between different sections of the website, including viewing their own created models (Mine), viewing featured models, and browsing the homepage.
+4. **Model Creation**: In the Mine section, users can create their own AI models using the platform's tools and features.
+5. **Model Saving**: Users can save any of the 25 default models to their own collection for easy access later. These saved models are stored in local storage.
+6. **Featured Models**: The Featured section displays the top 4 models based on the number of views, providing users with a curated selection of popular models.
+7. **Model Filtering**: Chip filters on the homepage allow users to filter models by categories, making it easier to find models that match their interests or needs.
+8. **Individual Model Page**: Clicking on a model from the homepage or the Mine section takes users to a detailed page for that model.
+9. **Detailed Model Information**: The individual model page includes a description of the model, an image of the model, a code snippet demonstrating its use, and its use case.
+10. **Live Views**: The individual model page also displays the number of live views for that model, giving users an idea of its popularity and current usage.
+11. **User Interaction**: Users can add and remove models from their saved collection, providing them with a personalized experience tailored to their interests.
+12. **Local Storage**: The application utilizes local storage to store user preferences and saved models, ensuring that their selections are retained even after closing the browser.
+13. **Responsive Design**: The website is designed to be responsive, ensuring that it looks and functions well on a variety of devices, including desktops, tablets, and smartphones.
+14. **User Engagement**: Features such as saving models, viewing top models, and filtering models by categories encourage user engagement and exploration of the platform.
+15. **Future Development**: Future development of AIModelize could include expanding the model catalog, adding more features for model creation and customization, and improving the user interface and user experience.
 
 ## Contributing
 
