@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "../components/Header";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Add = () => {
   const [imageUrl, setImageUrl] = useState<any>("");
@@ -13,6 +13,7 @@ const Add = () => {
   });
 
   const [formDataArray, setFormDataArray] = useState<any>([]);
+  const navigate = useNavigate();
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -34,6 +35,7 @@ const Add = () => {
       category: "",
       description: "",
     });
+    navigate("/");
   };
 
   const handleImageUpload = (event: any) => {

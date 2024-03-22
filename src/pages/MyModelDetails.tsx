@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -10,6 +10,8 @@ const MyModelDetails = () => {
   const location = useLocation();
   const item: any = location.state;
 
+  const navigate = useNavigate();
+
   const [savedItems, setSavedItems] = useState(
     JSON.parse(localStorage?.getItem("formDataArray") as string) || []
   );
@@ -20,6 +22,7 @@ const MyModelDetails = () => {
     );
     localStorage.setItem("formDataArray", JSON.stringify(updatedSavedItems));
     setSavedItems(updatedSavedItems);
+    navigate("/");
   };
 
   return (
@@ -54,14 +57,14 @@ const MyModelDetails = () => {
             {item?.codeSnippet}
           </SyntaxHighlighter>
         </div>
-        <div>
+        {/* <div>
           <p className="font-bold text-3xl">Some Use Cases :</p>
           <div className="bg-[#B8C0FF] py-8 px-4 mt-2">
             {item?.useCases?.map((usecase: any) => (
               <p key={usecase}>• Used in {usecase}</p>
             ))}
           </div>
-        </div>
+        </div> */}
         <DisqusComments post={item} />
       </div>
     </div>
