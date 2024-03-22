@@ -64,12 +64,12 @@ const ModelDetails = () => {
   return (
     <div className="bg-[#BBD0FF] min-h-screen pb-8">
       <Header />
-      <div className="p-4 bg-black absolute right-12 mt-5 text-white rounded-lg">
+      <div className="p-2 md:p-4 bg-black absolute md:right-12 right-2 md:mt-5 mt-20 text-white rounded-lg">
         👁 {views}
       </div>
       <div className="pt-8 flex flex-col items-center gap-y-8 px-8">
-        <p className="text-4xl font-bold">{item?.name}</p>
-        <img src={item?.imageUrl} width={"40%"} />
+        <p className="md:text-4xl text-2xl font-bold">{item?.name}</p>
+        <img src={item?.imageUrl} width={"50%"} />
       </div>
       <div className="pt-8 px-10">
         {isSaved ? (
