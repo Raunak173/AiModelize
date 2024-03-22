@@ -35,7 +35,7 @@ const Header = () => {
                 return {
                   fontWeight: isActive ? "bold" : "",
                   color: isActive ? "#A995DC" : "white",
-                  fontSize: isActive ? 24 : 16,
+                  fontSize: isActive ? 28 : 16,
                 };
               }}
             >
@@ -47,7 +47,7 @@ const Header = () => {
                 return {
                   fontWeight: isActive ? "bold" : "",
                   color: isActive ? "#A995DC" : "white",
-                  fontSize: isActive ? 24 : 16,
+                  fontSize: isActive ? 28 : 16,
                 };
               }}
             >
@@ -59,7 +59,7 @@ const Header = () => {
                 return {
                   fontWeight: isActive ? "bold" : "",
                   color: isActive ? "#A995DC" : "white",
-                  fontSize: isActive ? 24 : 16,
+                  fontSize: isActive ? 28 : 16,
                 };
               }}
             >
