@@ -6,7 +6,7 @@ import copy from "copy-to-clipboard";
 import DisqusComments from "../components/DisqusComments";
 import { useEffect, useState } from "react";
 import db from "../firebase";
-import { doc, increment, getDoc, setDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 
 const ModelDetails = () => {
   const location = useLocation();
@@ -41,17 +41,10 @@ const ModelDetails = () => {
       const viewRef = doc(db, "views", item.id.toString());
       const viewSnapshot = await getDoc(viewRef);
       const currentViews = viewSnapshot.exists() ? viewSnapshot.data().view : 0;
-      const newView = {
-        view: increment(currentViews + 1),
-        name: item.name,
-        category: item.category,
-        description: item.description,
-        codeSnippet: item.codeSnippet,
-        imageUrl: item.imageUrl,
-        useCases: item.useCases,
-      };
-      await setDoc(viewRef, newView, { merge: true });
-      setViews(currentViews + 1);
+      const newViewCount = currentViews + 1;
+
+      await setDoc(viewRef, { view: newViewCount }, { merge: true });
+      setViews(newViewCount);
     } catch (error) {
       console.error(error);
     }
